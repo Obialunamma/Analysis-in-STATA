@@ -1,0 +1,19 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\ADMIN\Desktop\Sage's PowerBI BootCamp\cardiodata.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Sep 2024, 23:37:26
+
+{com}. use "C:\Users\ADMIN\Desktop\Sage's PowerBI BootCamp\retail1.dta", clear
+
+. br
+
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\ADMIN\Desktop\Sage's PowerBI BootCamp\cardiodata.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 2 Sep 2024, 23:38:46
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

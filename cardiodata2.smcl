@@ -1,0 +1,55 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\ADMIN\Desktop\Sage's PowerBI BootCamp\cardiodata2.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 4 Sep 2024, 20:43:49
+
+{com}. use "C:\Users\ADMIN\Desktop\Sage's PowerBI BootCamp\cardiodata.dta", clear
+
+. br
+
+. use "C:\Users\ADMIN\Desktop\Sage's PowerBI BootCamp\stataclass.dta", clear
+
+. br
+
+. label define gender 1 "Female" 2 "Male"
+
+. label values gender gender
+
+. replace alco = -1 if missing(alco)
+{txt}(13097 real changes made)
+
+{com}. label define Alcohol 0 "No" 1 "Yes" -1 "Unknown", replace
+
+. codebook alco
+
+{txt}{hline}
+{res}alco{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+{ralign 22:label}:  {res:Alcohol}
+
+{col 18}range:  [{res}-1{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}3{col 51}{txt}missing .:  {res}0{txt}/{res}70000
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 24}{res}  13097{col 33}      -1{col 43}{txt}Unknown
+{col 24}{res}  53862{col 33}       0{col 43}{txt}No
+{col 24}{res}   3041{col 33}       1{col 43}{txt}Yes
+
+{com}. save "C:\Users\ADMIN\Desktop\Sage's PowerBI BootCamp\stataclass.dta", replace
+{txt}file C:\Users\ADMIN\Desktop\Sage's PowerBI BootCamp\stataclass.dta saved
+
+{com}. save "C:\Users\ADMIN\Desktop\Sage's PowerBI BootCamp\stataclass.dta", replace
+{txt}file C:\Users\ADMIN\Desktop\Sage's PowerBI BootCamp\stataclass.dta saved
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\ADMIN\Desktop\Sage's PowerBI BootCamp\cardiodata2.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 4 Sep 2024, 20:56:42
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
